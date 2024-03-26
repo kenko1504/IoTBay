@@ -3,3 +3,5 @@ George Claude
 Humzah Ghaffar
 Maoyuan Cheng
 Xinyu Fan
+Kenji Watanabe
+
