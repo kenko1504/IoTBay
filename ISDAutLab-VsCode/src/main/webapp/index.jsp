@@ -10,6 +10,7 @@
     </head>
     <body onload="startTime()" >
         <h1>Home Page</h1>
+        <h1>Changes were made</h1>
         <a href="/register.jsp">Register an Account</a>
     </body>
 </html>
