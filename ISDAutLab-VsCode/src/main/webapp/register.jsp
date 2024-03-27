@@ -88,6 +88,7 @@
             <h1>Welcome</h1>
             <h2>Email: <%= email%></h2>
             <h2>Name: <%= name%></h2>
+            <button><a href="/logout.jsp">Logout.</a>
 
         <% } else { %>
         <form>

@@ -71,30 +71,26 @@
     <body >
         <%
             String email = request.getParameter("email");
+            String name = request.getParameter("name");
             String password = request.getParameter("password");
             String submitted = request.getParameter("submitted");
-            String name = request.getParameter("name");
-
-           
         %>
-        <% if (submitted != null) { %>
-            <h1>Welcome</h1>
-            <h2>Email: <%= email%></h2>
-            <h2>Name: <%= name%></h2>
-
-        <% } else { %>
+        <%
+            User user = (User) session.getAttribute("user");
+        %>
+    
         <form>
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" placeholder="email" required/>
+            <input type="user.getEmail()" name="email" id="email" placeholder="email" required/>
             <label for="password">Password:</label>
-            <input type="password" name="password" id="password" placeholder="password" />
+            <input type="user.getPassword()" name="password" id="password" placeholder="password" />
             <br/>
             <br/>
             <input type="hidden" name="submitted" id="submitted" value="true" />
-            <button type="submit">Login!</button>
+            <button><a href="/account.jsp">Login to Account</button>
         </form>
 
-        <button><a href="/">Return to Home Page.</a></button>
-        <% } %>
+        <button><a href="/">Back to Main Menu.</a></button>
+       
     </body>
 </html>

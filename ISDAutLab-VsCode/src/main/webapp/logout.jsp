@@ -11,5 +11,6 @@
         session.invalidate();
         %>
         <h1> You have been Logged Out!</h1>
+        <button><a href="/">Home Page</a></button>
     </body>
 </html>
