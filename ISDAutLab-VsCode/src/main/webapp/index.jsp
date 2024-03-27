@@ -9,8 +9,21 @@
         <title>Home Page</title>
     </head>
     <body onload="startTime()" >
+        <%
+            String email = request.getParameter("email");
+            String name = request.getParameter("password");
+        %>
         <h1>Home Page</h1>
-        <h1>Changes were made</h1>
-        <a href="/register.jsp">Register an Account</a>
+        <h1>Welcome to Group 3 Home Page!</h1>
+        <form>
+        <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="email" required/>
+        <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="password" /> 
+            <br/>
+            <input type="hidden" name="submitted" id="submitted" value="true" />
+            <button type="submit">Click Here to Login.</button>
+        </form>
+        <a href="/register.jsp">Click Here & Register an Account With Us!</a>
     </body>
 </html>
