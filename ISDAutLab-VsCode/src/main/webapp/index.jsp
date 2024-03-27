@@ -10,7 +10,10 @@
     </head>
     <body onload="startTime()" >
         <h1>Home Page</h1>
-        <h1>Changes were made</h1>
-        <a href="/register.jsp">Register an Account</a>
+        <h1>Welcome to Group 3 Home Page!</h1>
+         <a href="/login.jsp">Click here to login to your Account.</a>
+         </br>
+         </br>
+        <a href="/register.jsp">Click Here & Register an Account With Us!</a>
     </body>
 </html>

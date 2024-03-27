@@ -1,5 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.util.Random"%>
+<%@page import="uts.isd.model.*"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -71,13 +72,25 @@
         <%
             String email = request.getParameter("email");
             String name = request.getParameter("name");
+            String password = request.getParameter("password");
+            String phone = request.getParameter("phone");
+            String favCol = request.getParameter("favcol");
+            String gender = request.getParameter("gender");
             String tos = request.getParameter("tos");
             String submitted = request.getParameter("submitted");
+
+            if (submitted != null){
+                User user = new User(email, name, phone, password, gender, favCol);
+                session.setAttribute("user", user);
+            }
         %>
         <% if (submitted != null) { %>
             <h1>Welcome</h1>
-            <h2>Email: <%= email%></h2>
-            <h2>Name: <%= name%></h2>
+            <h2>You have succesfully registered!</h2>
+            <button><a href="/login.jsp">Login.</a></button>
+            </br>
+            </br>
+            <button><a href="/logout.jsp">Logout.</a>
 
         <% } else { %>
         <form>
