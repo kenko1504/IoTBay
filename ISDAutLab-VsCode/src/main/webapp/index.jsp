@@ -8,7 +8,7 @@
         <script type="text/javascript" src="js/index.js"></script>
         <title>Home Page</title>
     </head>
-    <body onload="startTime()" >
+    <body>
         <h3>Home</h3>
         <div style ="margin-top: 12%"> <!--inline css; you can use the head version -->
             <h1 style="text-align: center; font-size: 50px">IoTBay</h1>
