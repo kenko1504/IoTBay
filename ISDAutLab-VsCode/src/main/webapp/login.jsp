@@ -69,24 +69,16 @@
         <title>Login</title>
     </head>
     <body >
-        <%
-            String email = request.getParameter("email");
-            String password = request.getParameter("password");
-            String submitted = request.getParameter("submitted");
-        %>
-        <%
-            User user = (User) session.getAttribute("user");
-        %>
         <h1> Login </h1>
-        <form>
+        <form action="welcome.jsp" method="post"> <!-- sends a post request to welcome.jsp and webpage updates to it after pressing login button-->
             <label for="email">Email:</label>
-            <input type="user.getEmail()" name="email" id="email" placeholder="email" required/>
+            <input type="email" name="email" id="email" placeholder="email" required/>
             <label for="password">Password:</label>
-            <input type="user.getPassword()" name="password" id="password" placeholder="password" required/>
+            <input type="password" name="password" id="password" placeholder="password" required/>
             <br/>
             <br/>
             <input type="hidden" name="submitted" id="submitted" value="true" />
-            <button><a href="/welcome.jsp">Login to Account</button>
+            <button>Login to Account</button>
         </form>
 
         <button><a href="/">Cancel</a></button>

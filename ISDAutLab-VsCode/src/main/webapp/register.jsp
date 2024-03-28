@@ -69,7 +69,7 @@
         <title>Register</title>
     </head>
     <body >
-        <form action="welcome.jsp" method="post">
+        <form action="welcome.jsp" method="post"> <!-- sends a post request to welcome.jsp and webpage updates to it after pressing register button-->
             <label for="email">Email:</label>
             <input type="email" name="email" id="email" placeholder="email" required/>
             <label for="password">Password:</label>
