@@ -73,14 +73,11 @@
             String email = request.getParameter("email");
             String name = request.getParameter("name");
             String password = request.getParameter("password");
-            String phone = request.getParameter("phone");
-            String favCol = request.getParameter("favcol");
-            String gender = request.getParameter("gender");
             String tos = request.getParameter("tos");
             String submitted = request.getParameter("submitted");
 
             if (submitted != null){
-                User user = new User(email, name, phone, password, gender, favCol);
+                User user = new User(email, name, password);
                 session.setAttribute("user", user);
             }
         %>
@@ -100,10 +97,6 @@
             <input name="name" id="name" placeholder="name" />
             <label for="password">Password:</label>
             <input type="password" name="password" id="password" placeholder="password" />
-            <label for="gender">Gender:</label>
-            <input name="gender" id="gender" placeholder="gender" />
-            <label for="favcol">Favourite Colour:</label>
-            <input type="color" name="favcol" id="favcol" placeholder="favcol" />
             <br/>
             <label for="tos">TOS:</label>
             <input type="checkbox" name="tos" id="tos" placeholder="tos" />

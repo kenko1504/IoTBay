@@ -9,11 +9,15 @@
         <title>Home Page</title>
     </head>
     <body onload="startTime()" >
-        <h1>Home Page</h1>
-        <h1>Welcome to Group 3 Home Page!</h1>
-         <a href="/login.jsp">Click here to login to your Account.</a>
-         </br>
-         </br>
-        <a href="/register.jsp">Click Here & Register an Account With Us!</a>
+        <h3>Home</h3>
+        <div style ="margin-top: 12%"> <!--inline css; you can use the head version -->
+            <h1 style="text-align: center; font-size: 50px">IoTBay</h1>
+            <div style ="text-align: center;">
+                <a href="/login.jsp">Login</a>
+                </br>
+                </br>
+                <a href="/register.jsp">Register</a>
+            </div>
+        <div>
     </body>
 </html>
